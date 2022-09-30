@@ -1,0 +1,19 @@
+{% load static cms_tags sekizai_tags %}
+<!DOCTYPE html>
+<html dir="ltr" lang="{{ LANGUAGE_CODE }}">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"/>
+	<title>To be filled</title>
+	<link rel="icon" href="data:,">
+	{% render_block "css" %}
+	{% addtoblock "css" %}<link href="{% static 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}" rel="stylesheet">{% endaddtoblock %}
+</head>
+
+<body>{% cms_toolbar %}
+	{% block "main-content" %}{% endblock %}
+	{% render_block "js" %}
+</body>
+
+</html>

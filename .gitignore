@@ -16,10 +16,12 @@ eggs/
 .eggs/
 lib/
 lib64/
+node_modules/
 parts/
 sdist/
 var/
 wheels/
+workdir/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/

@@ -1,0 +1,14 @@
+{% extends "testapp/base.html" %}
+{% load i18n cms_tags %}
+
+{% block "main-content" %}
+	{% placeholder "Main Content" or %}
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<h1>{% translate "Please add content here" %}</h1>
+		</div>
+	</div>
+</div>
+	{% endplaceholder %}
+{% endblock %}
